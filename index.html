@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wedding Of Zeen Alhaddad & Siti Rahmah</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family:'Cormorant SC',serif;
+background:#0b1220;
+color:#e5e7eb;
+overflow-x:hidden;
+}
+section{
+padding:70px 20px;
+text-align:center;
+}
+h2{
+font-size:32px;
+margin-bottom:20px;
+color:#d6c7a1;
+}
+p{
+line-height:1.8;
+}
+/* COVER */
+#cover{
+position:fixed;
+inset:0;
+z-index:9999;
+background:url('cover.jpg') center center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-direction:column;
+}
+#cover::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(2px);
+}
+.cover-content{
+position:relative;
+z-index:2;
+}
+.cover-photo{
+width:230px;
+height:230px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #d6c7a1;
+box-shadow:0 0 30px rgba(214,199,161,.5);
+margin-bottom:20px;
+}
+.couple-name{
+font-size:38px;
+color:#d6c7a1;
+margin-bottom:15px;
+}
+.cover-text{
+margin-bottom:20px;
+}
+.open-btn{
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#d6c7a1;
+color:#111827;
+font-size:18px;
+cursor:pointer;
+font-weight:bold;
+}
+/* HERO */
+.hero{
+background:linear-gradient(
+180deg,
+#0b1220,
+#121b2f
+);
+}
+.arab{
+font-size:34px;
+color:#d6c7a1;
+margin-bottom:20px;
+}
+.date{
+font-size:22px;
+color:#d6c7a1;
+margin-top:15px;
+}
+/* PHOTO FRAME */
+.frame{
+width:240px;
+height:240px;
+margin:auto;
+overflow:hidden;
+border-radius:20px;
+border:3px solid rgba(214,199,161,.5);
+box-shadow:0 0 25px rgba(214,199,161,.15);
+}
+.frame img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+/* BOX */
+.box{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+border-radius:18px;
+padding:20px;
+margin:20px auto;
+max-width:450px;
+}
+/* COUNTDOWN */
+.countdown{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+.time-box{
+background:rgba(255,255,255,.04);
+padding:15px;
+border-radius:15px;
+min-width:80px;
+}
+.time-box h3{
+color:#d6c7a1;
+font-size:26px;
+}
+.time-box span{
+font-size:14px;
+}
+/* BUTTON */
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#d6c7a1;
+color:#111827;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+margin-top:15px;
+}
+.gift-number{
+display:none;
+margin-top:10px;
+color:#d6c7a1;
+}
+button{
+padding:10px 22px;
+border:none;
+border-radius:25px;
+background:#d6c7a1;
+color:#111827;
+cursor:pointer;
+font-weight:bold;
+}
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:10px;
+border:none;
+background:rgba(255,255,255,.05);
+color:white;
+}
+textarea{
+height:120px;
+resize:none;
+}
+.rsvp-item{
+margin-top:15px;
+padding:15px;
+border-radius:10px;
+background:rgba(255,255,255,.04);
+text-align:left;
+}
+footer{
+padding:40px 20px;
+text-align:center;
+color:#d6c7a1;
+}
+</style>
+</head>
+<body>
+<audio id="musik" loop>
+<source src="musik.mp3" type="audio/mpeg">
+</audio>
+<div id="cover">
+<div class="cover-content">
+<img src="cover.jpg" class="cover-photo">
+<h1 class="couple-name">
+ZEEN ALHADDAD
+<br>&<br>
+SITI RAHMAH
+</h1>
+<p class="cover-text">
+The Wedding Invitation
+</p>
+<button class="open-btn" onclick="start()">
+💌 Buka Undangan
+</button>
+</div>
+</div>
+<section class="hero">
+<div class="arab">
+بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+</div>
+<p>
+Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan untukmu dari jenismu sendiri agar kamu merasa tenteram kepadanya.
+</p>
+<p class="date">
+21 Juni 2026
+<
+
+<section>
+<h2>Mempelai</h2>
+<div class="box">
+<div class="frame">
+<img src="pria.jpg" alt="Mempelai Pria">
+</div>
+<h3 style="margin-top:15px;color:#d6c7a1;">
+ZEEN ALHADDAD
+</h3>
+<p>
+Putra dari Bpk. XXXX & Ibu XXXX
+</p>
+</div>
+<div class="box">
+<div class="frame">
+<img src="wanita.jpg" alt="Mempelai Wanita">
+</div>
+<h3 style="margin-top:15px;color:#d6c7a1;">
+SITI RAHMAH
+</h3>
+<p>
+Putri dari Bpk. XXXX & Ibu XXXX
+</p>
+</div>
+</section>
+<section>
+<h2>Menuju Hari Bahagia</h2>
+<div class="countdown">
+<div class="time-box">
+<h3 id="days">0</h3>
+<span>Hari</span>
+</div>
+<div class="time-box">
+<h3 id="hours">0</h3>
+<span>Jam</span>
+</div>
+<div class="time-box">
+<h3 id="minutes">0</h3>
+<span>Menit</span>
+</div>
+<div class="time-box">
+<h3 id="seconds">0</h3>
+<span>Detik</span>
+</div>
+</div>
+</section>
+<section>
+<h2>Resepsi Pernikahan</h2>
+<div class="box">
+<p>
+Minggu, 21 Juni 2026
+</p>
+<p>
+Pukul 09.00 WIB - Selesai
+</p>
+<br>
+
+📍 Lihat Lokasi
+</div>
+</section>
+<section>
+<h2>Wedding Gift</h2>
+<div class="box">
+<p>Bank BCA</p>
+<button onclick="toggleGift('bca')">
+Lihat Rekening
+</button>
+<div id="bca" class="gift-number">
+1234567890 a.n ZEEN ALHADDAD
+</div>
+</div>
+<div class="box">
+<p>DANA</p>
+<button onclick="toggleGift('dana')">
+Lihat Nomor
+</button>
+<div id="dana" class="gift-number">
+08xxxxxxxxxx
+</div>
+</div>
+</section>
+
+<section>
+<h2>RSVP & Ucapan</h2>
+<div class="box">
+<select id="hadir">
+<option>Hadir</option>
+<option>Tidak Hadir</option>
+</select>
+<textarea
+id="pesan"
+placeholder="Tulis ucapan dan doa terbaik...">
+</textarea>
+<button onclick="rsvp()">
+Kirim Ucapan
+</button>
+</div>
+<div id="list"></div>
+</section>
+<footer>
+<h3>
+Terima Kasih
+</h3>
+<p>
+Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.
+</p>
+<br>
+<p>
+ZEEN ALHADDAD & SITI RAHMAH
+</p>
+</footer>
+<script>
+function start(){
+document.getElementById("cover").style.display="none";
+document.getElementById("musik").play();
+}
+function toggleGift(id){
+let el=document.getElementById(id);
+if(el.style.display==="block"){
+el.style.display="none";
+}else{
+el.style.display="block";
+}
+}
+let target=
+new Date("June 21, 2026 09:00:00").getTime();
+setInterval(function(){
+let now=new Date().getTime();
+let distance=target-now;
+let days=Math.floor(
+distance/(1000*60*60*24)
+);
+let hours=Math.floor(
+(distance%(1000*60*60*24))
+/
+(1000*60*60)
+);
+let minutes=Math.floor(
+(distance%(1000*60*60))
+/
+(1000*60)
+);
+let seconds=Math.floor(
+(distance%(1000*60))
+/
+1000
+);
+document.getElementById("days").innerHTML=days;
+document.getElementById("hours").innerHTML=hours;
+document.getElementById("minutes").innerHTML=minutes;
+document.getElementById("seconds").innerHTML=seconds;
+},1000);
+window.addEventListener("load",()=>{
+let data=
+JSON.parse(
+localStorage.getItem("rsvpData")
+)||[];
+data.forEach(item=>{
+tampilkanRSVP(
+item.nama,
+item.hadir,
+item.pesan
+);
+});
+});
+function tampilkanRSVP(
+nama,
+hadir,
+pesan
+){
+let div=
+document.createElement("div");
+div.className="rsvp-item";
+div.innerHTML=
+`
+<b>👤 ${nama}</b><br>
+📌 ${hadir}<br>
+💌 ${pesan}
+`;
+document
+.getElementById("list")
+.appendChild(div);
+}
+function rsvp(){
+let nama=
+document.getElementById("nama").value;
+let hadir=
+document.getElementById("hadir").value;
+let pesan=
+document.getElementById("pesan").value;
+if(nama.trim()===""){
+alert("Masukkan nama terlebih dahulu");
+return;
+}
+tampilkanRSVP(
+nama,
+hadir,
+pesan
+);
+let data=
+JSON.parse(
+localStorage.getItem("rsvpData")
+)||[];
+data.push({
+nama:nama,
+hadir:hadir,
+pesan:pesan
+});
+localStorage.setItem(
+"rsvpData",
+JSON.stringify(data)
+);
+document.getElementById("nama").value="";
+document.getElementById("pesan").value="";
+alert("Terima kasih atas ucapannya ❤️");
+}
+</script>
+</body>
+</html>
